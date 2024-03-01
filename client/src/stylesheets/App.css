@@ -1,0 +1,454 @@
+/* Add your CSS here */
+
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    border: 1px solid black;
+}
+
+.container {
+    height: 100vh;    
+    display: flex;
+    flex-direction: column;
+
+}
+
+.main {
+    display: flex;
+    flex: 1;
+    height: 95%;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    background-color: gray;
+    height: 5%;
+}
+
+.header-text {
+    text-align: center;
+    margin-left: 100px;
+    flex: 1;
+}
+
+.nav {
+    border-right: 1px dashed lightgray;
+}
+
+.nav-list {
+    text-align: center;
+    padding: 24px 0px;
+    width: 200px;
+}
+
+.nav-list li {
+    margin-bottom: 12px;
+    width: 100%;
+}
+
+.nav-list li a {
+    text-decoration: none;
+    color: blue;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    padding: 24px;
+}
+
+.question-header {
+    display: flex;
+    flex-direction: column;
+}
+
+.all-questions {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 24px;
+}
+
+.question-types {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 16px;
+    padding-right: 48px;
+}
+
+
+.label-header {
+    font-size: larger;
+    font-weight: 500;
+}
+
+.label-details {
+    font-style: italic;
+    padding-left: 20px;
+}
+
+.text-box {
+    height: 35px;
+    width: 90%;
+    resize: none;
+   
+}
+
+.post-btn{
+    background-color: #6499E9;
+    color: white;
+    width: 110px;
+    height: 50px;
+    margin-right: 20px;
+}
+
+.required-info{
+    color: red;
+    margin-left: 50%;
+}
+
+#question-title {
+    height: 50px;
+    
+}
+
+#question-text{
+    height: 150px;
+    /* resize: vertical; */
+}
+
+@media screen and (max-width: 900px) {
+    .required-info {
+       margin-left: 20px;
+    }
+ }
+
+.question-header {
+    border-bottom: 1px dashed gray;
+}
+
+#question-container{
+    overflow-y: scroll;
+}
+
+.question {
+    border-bottom: 1px dashed gray;
+    width: 100%;
+    min-height: 60px;
+    margin-bottom: 15px;
+}
+
+#main-question-info {
+    display: flex;
+    gap:20px;
+    height: 100%;
+    flex: 1;
+}
+
+#title-and-tags {
+    height: 100%;
+    flex: 1;
+    align-items: center;
+}
+
+.tag-container {
+    display: flex;
+    gap: 8px;
+}
+
+.tag-header{
+    display: inline-block;
+    padding-right: 35%;
+}
+
+.tag-ask-q-btn{
+    margin-left: 50px;
+    background-color: #6499E9;
+    color: white;
+    width: 100px;
+    height: 30px;
+}
+
+.tag-block{
+    border-style: dashed;
+    border-width: 1.5px;
+
+    text-align: center;
+    display: inline-table;
+    padding-bottom: 100px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    padding-left: 40px;
+    padding-right: 40px;
+    margin-left: 50px;
+    margin-right: 80px;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    height: 100px;
+    width: 200px;
+}
+
+.ans-num{
+    display: inline-block;
+    /* position: absolute; */
+    text-align: center;
+
+}
+
+.q-title{
+    padding-top: 20px;
+    padding-left: 40px;
+    /* position: absolute; */
+    max-width: 750px;
+    display: inline-block;
+    /* text-align: center; */
+    
+}
+
+#ques-ans-header{
+    padding-bottom: 0px;
+    border: solid black 1px;
+    padding: 4px;
+    /* padding-right: 50px; */
+}
+
+#header-top {
+    display: flex;
+    margin-bottom: 60px;
+    align-items: center;
+}
+
+#header-bottom{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 30px;
+    padding-bottom: 18px;
+}
+
+#header-bottom-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 30px;
+    padding-bottom: 18px;
+}
+
+#text {
+    flex: 2 1 0;
+}
+
+#ques-user-time-cont{
+    flex: 3 1 1;
+    min-width: 100px;
+}
+
+.ask-question-btn{
+    margin-left: 50px;
+    background-color: #6499E9;
+    color: white;
+    width: 100px;
+    height: 30px;
+    display: inline-block;
+    position: absolute;
+    right: 50px;
+}
+
+#newest, #active, #unanswered{
+    width: 80px;
+    height: 25px;
+}
+
+.nav-btns{
+    margin-right: 80px;
+    font-size: 16px;
+    color: blue;
+    background: none;
+    border: none;
+    padding: 0;
+    margin: 0;
+    font-family: inherit;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.nav-btns:hover {
+    color:red;
+}
+
+.red{
+    color: red;
+}
+
+
+.answer-text{
+    height: 150px;
+}
+
+.tag{
+    border: 1px solid black;
+    border-radius: 1px;
+    background-color: grey;
+    color: whitesmoke;
+}
+
+.green{
+    color:green;
+}
+
+#answer-container {
+    overflow-y: scroll;
+}
+
+.answer {
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid black;
+    margin-bottom: 18px;
+    padding: 18px 0px;
+    gap: 18px;
+}
+
+.answer-data{
+    display: flex ;
+    flex-direction: row;
+}
+
+.user-and-time {
+    flex: 3 1 1;
+}
+
+.text {
+    flex: 2 1 0;
+}
+
+#tag-page{
+    overflow-y: scroll;
+}
+
+.new-question-page{
+    overflow-y: scroll;
+}
+
+a.title {
+    color: blue;
+}
+
+.ans-question-btn{
+    margin-top: 40px;
+}
+
+.gray {
+    background-color: rgb(190, 190, 190);
+}
+
+.login-btn, .register-btn, .guest-btn{
+    /* background-color: #04AA6D;  */
+    border: none;
+    /* color: white; */
+    background-color: #6499E9;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    font-size: 16px;
+    width: 300px;
+
+    
+}
+
+.center {
+    margin: auto;
+    width: 50%;
+    /* border: 3px solid green; */
+    text-align: center;
+    padding: 10px;
+    /* margin-bottom: 50px; */
+  }
+
+.up {
+    margin-top: 50px;
+}
+
+  .title{
+    text-align: center;
+  }
+
+  .signup-header, .login-header{
+    margin-bottom: 20px;
+  }
+
+  .home-btn{
+    background-color: #6499E9;
+    color: white;
+    width: 100px;
+    height: 40px;
+    margin-bottom: 50px;
+  }
+
+  .welcome-header{
+    position: fixed;
+    text-align: center;
+    margin-left: 300px;
+    margin-top: 200px;
+  }
+
+  .login-home-btn{
+    margin-bottom: 200px;
+  }
+
+  #previous, #next {
+    width: 100px;
+    height: 20px;
+  }
+
+  /* #previous {
+    margin-right: 700px;
+  } */
+
+  .pageNum{
+    margin-left: 360px;
+    margin-right: 360px;
+  }
+
+  .profile-btn{
+    /* margin-left: 50px; */
+    /* margin-right: 80px; */
+    font-size: 16px;
+    /* color: blue; */
+    background: none;
+    border: none;
+    /* padding: 0; */
+    /* margin: 0; */
+    font-family: inherit;
+    cursor: pointer;
+    /* text-decoration: underline; */
+  }
+  
+  #comment {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px dashed gray;
+  }
+
+  #comment-info {
+    display: flex;
+    gap: 18px
+  }
+
+  #post-comment-question {
+    margin-top: 10px;
+  }
+
+  .page-numbers {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
